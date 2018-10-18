@@ -13,10 +13,92 @@ ul li{
     color:white;
 }
 
+button{
+    margin-left: 50px;
+
+}
+
+
 .quizlist li{
     display: block;
 }
 
 ul.quizlist{
     background-color: grey;
+}
+
+.question{
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.answers {
+    margin-bottom: 20px;
+    padding-left: 80px;
+    display: inline-block;
+
+}
+.answers label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.active-slide{
+    opacity: 1;
+    z-index: 2;
+}
+.quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+}
+
+.h2{
+    font-weight: 300;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+
+}
+.quiztest{
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    font-weight: 300;
+    text-align: left;
+    background-color: #f8f6f0;
+    padding-left: 20;
+}
+#myProgress {
+    width: 100%;
+    background-color: red;
+}
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+}
+.result {
+    text-align: left;
+    line-height: 30px;
+    color: black;
+    font-size: 20px;
+    padding-left: 50px;
 }
